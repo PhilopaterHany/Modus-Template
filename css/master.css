@@ -250,7 +250,6 @@ header .links {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: -1;
 }
 .landing::before {
     content: "";
@@ -300,6 +299,7 @@ header .links {
     text-decoration: none;
     letter-spacing: 4px;
     outline: none;
+    cursor: pointer;
     transition: var(--mainDuration);
     -webkit-transition: var(--mainDuration);
     -moz-transition: var(--mainDuration);
