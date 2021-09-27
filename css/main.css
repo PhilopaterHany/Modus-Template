@@ -40,6 +40,52 @@ html {
     margin-inline: auto;
     padding-inline: 15px;
 }
+#to-top {
+    /*^ Scroll To Top Button */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    position: fixed;
+    bottom: 20px;
+    right: -1000px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-color: var(--mainColorT);
+    z-index: 99;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    transition: var(--mainDuration);
+    -webkit-transition: var(--mainDuration);
+    -moz-transition: var(--mainDuration);
+    -ms-transition: var(--mainDuration);
+    -o-transition: var(--mainDuration);
+}
+#to-top .fas {
+    font-size: 20px;
+    color: #fff;
+    transition: var(--mainDuration);
+    -webkit-transition: var(--mainDuration);
+    -moz-transition: var(--mainDuration);
+    -ms-transition: var(--mainDuration);
+    -o-transition: var(--mainDuration);
+}
+#to-top:hover {
+    filter: brightness(70%);
+    -webkit-filter: brightness(70%);
+}
+#to-top:hover .fas {
+    transform: translateY(-4px);
+    -webkit-transform: translateY(-4px);
+    -moz-transform: translateY(-4px);
+    -ms-transform: translateY(-4px);
+    -o-transform: translateY(-4px);
+}
 .heading h1 {
     margin-bottom: 60px;
     text-transform: uppercase;
@@ -663,4 +709,4 @@ footer .container .social a {
     text-decoration: none;
     margin-inline: 10px;
 }
-/** Start Footer */
+/** End Footer */
