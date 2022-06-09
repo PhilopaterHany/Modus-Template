@@ -1,3 +1,4 @@
+// Scroll To Top Button
 const btn = document.getElementById("to-top");
 window.onscroll = () => {
     window.scrollY >= 400
@@ -11,3 +12,6 @@ btn.onclick = () => {
         behavior: "smooth",
     });
 };
+
+// Putting Year at Footer
+document.querySelector("footer .year").innerHTML = new Date().getFullYear();
